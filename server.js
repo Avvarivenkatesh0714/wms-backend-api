@@ -10,10 +10,8 @@ dotenv.config();
 const app = express();
 app.use(express.json());
 
-// Health check or root route for visibility
-app.get('/', (req, res) => {
-  res.send('🚀 WMS Backend API is live! Use /api/inventory or /api/orders to interact.');
-});
+const path = require('path');
+app.use(express.static(path.join(__dirname, 'public')));
 
 // API routes
 app.use('/api/inventory', inventoryRoutes);

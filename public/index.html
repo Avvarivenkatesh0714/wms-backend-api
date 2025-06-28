@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WMS Backend API</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+      margin: 0;
+      padding: 2rem;
+    }
+    h1 {
+      color: #2c3e50;
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      font-size: 1rem;
+      margin-bottom: 2rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 2rem;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    th, td {
+      padding: 0.8rem;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    th {
+      background-color: #3498db;
+      color: white;
+    }
+    .section-title {
+      font-size: 1.4rem;
+      margin: 2rem 0 1rem;
+      border-left: 4px solid #3498db;
+      padding-left: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>🚀 WMS Backend API is live!</h1>
+  <p>Use the endpoints below to interact with the API for inventory and orders.</p>
+
+  <div class="section-title">📦 Inventory Endpoints</div>
+  <table>
+    <thead>
+      <tr>
+        <th>Method</th>
+        <th>Endpoint</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>GET</td><td>/api/inventory</td><td>Get all inventory items</td></tr>
+      <tr><td>GET</td><td>/api/inventory/:id</td><td>Get one inventory item</td></tr>
+      <tr><td>POST</td><td>/api/inventory</td><td>Create new inventory item</td></tr>
+      <tr><td>PUT</td><td>/api/inventory/:id</td><td>Update inventory item</td></tr>
+      <tr><td>DELETE</td><td>/api/inventory/:id</td><td>Delete inventory item</td></tr>
+    </tbody>
+  </table>
+
+  <div class="section-title">📦 Order Endpoints</div>
+  <table>
+    <thead>
+      <tr>
+        <th>Method</th>
+        <th>Endpoint</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>GET</td><td>/api/orders</td><td>Get all orders</td></tr>
+      <tr><td>GET</td><td>/api/orders/:id</td><td>Get one order</td></tr>
+      <tr><td>POST</td><td>/api/orders</td><td>Create new order</td></tr>
+      <tr><td>PUT</td><td>/api/orders/:id</td><td>Update order</td></tr>
+      <tr><td>DELETE</td><td>/api/orders/:id</td><td>Cancel/delete order</td></tr>
+    </tbody>
+  </table>
+</body>
+</html>

@@ -1,7 +1,9 @@
 
 # 📦 Warehouse Management System (WMS) – Backend API
 
-A simple backend API for managing inventory and orders in a warehouse, built using **Node.js**, **Express**, and **MongoDB**.
+🚀 **Live Demo**: [https://wms-backend-api.onrender.com](https://wms-backend-api.onrender.com)
+
+This is a deployed backend REST API for warehouse inventory and order management, built using Node.js, Express.js, and MongoDB.
 
 ---
 
